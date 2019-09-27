@@ -1,2 +1,2 @@
-# BCH410
-Project for BCH410 2019
+# hmtp
+Project for BCH410 2019, a R package to ... 
