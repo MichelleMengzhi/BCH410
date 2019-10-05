@@ -1,0 +1,24 @@
+Package: hmtp
+Type: Package
+Title: Homology Modeling Templates Preparation
+Version: 0.1.0
+Author: Yuexin Yu
+Maintainer: Yuexin Yu <yuexin.yu@mail.utoronto.ca>
+Description: Prepare proper templates for homology modeling from a given database, 
+    and have a quick visualization of how similar template and target sequences are 
+    (i.e. how they align together) in both 1D and 3D.
+License: MIT + file LICENSE
+Depends: R (>= 3.1.0)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    Biostrings,
+    DECIPHER,
+    xml2,
+    filesstrings,
+    rgl,
+    curl,
+    utils
+Suggests: 
+    testthat
