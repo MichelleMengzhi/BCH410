@@ -31,5 +31,5 @@ The author of the package is Yuexin Yu.
 
 In **selectTemplates** function, [Biostrings](https://www.bioconductor.org/packages/devel/bioc/manuals/Biostrings/man/Biostrings.pdf), [DECIPHER](https://bioconductor.org/packages/release/bioc/html/DECIPHER.html) packages are imported for capturing protein sequences from fasta file and 1D visualization respectively. Yuexin Yu built up the filter to capture information for pairwise alignment, the html download of selected pdb files, and the generation of alignment files for later homology modeling.   
 
-In **alignment3dVisualization** function, [rgl](https://cran.r-project.org/web/packages/rgl/rgl.pdf) package is used to help to generate a line plot graph. Yuexin Yu built up the filter to capture the xyz coordinates from the input and output a 3D image which plots two set od data and line all points all to generate a rough 3D structure of proteins. 
+In **alignment3dVisualization** function, [rgl](https://cran.r-project.org/web/packages/rgl/rgl.pdf) package is used to help to generate a line plot graph. Yuexin Yu built up the filter to capture the xyz coordinates from the input and output a 3D image which plots two set of data and line all points all to generate a rough 3D structure of proteins. 
 
