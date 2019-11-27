@@ -29,7 +29,7 @@
 #' # submit two files to the link and dowload the pdb file, call
 #' # it align.pdb
 #'
-#' alignment3dVisulization("align.pdb", "4GSA", "5TE2")
+#' alignment3dVisualization("align.pdb", "4GSA", "5TE2")
 #'
 #' @export
 #' @import rgl
