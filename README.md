@@ -25,6 +25,23 @@ An overview of the package is illustrated below.
 This package contains two main functions:
 **selectTemplates** which selects templates for the target in the later homology modeling and gets their pdb files and alignment file, **alignment3dVisualization** whcih provides a visualization of how similar the template and target sequences are in 3D, helper functions *crossReferenceList*, *GetPdbFileGenerator*, *pathGeneratorMovement*, which contribute in main functions but can also be used separately.
 
+## Quick start
+
+You can use example data in the package with the following code
+
+``` r
+selectTemplates("targetExample.fasta", "databaseExample.fasta", "databaseExample.txt")
+```
+
+which generates tio 5 pairwise sequence alignments and visualization of the first argument as the target sequence and the second argument as the protein database.
+
+
+``` r
+alignment3dVisulization("align.pdb", "4GSA", "5TE2")
+``` 
+
+which generates a quick 3D visualization of the alignment of the second and third arguments 
+
 ## Contribution
 
 The author of the package is Yuexin Yu. 
