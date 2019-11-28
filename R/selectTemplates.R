@@ -38,9 +38,10 @@
 #'                 "databaseExample.txt")
 #'
 #' @export
-#' @import Biostrings
+#' @importFrom Biostrings readAAStringSet pairwiseAlignment BStringSet
+#' AAStringSet writeXStringSet
 #' @import DECIPHER
-#' @import utils
+#'
 selectTemplates <- function(targetSequence, databaseSequences,
                             crossReference){
   # store output data(should be a list or a column) into a text file
