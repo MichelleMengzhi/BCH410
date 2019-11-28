@@ -23,8 +23,8 @@ There might be more than one pdb names for one sequence, the package
 only pick the last one in given file.
 }
 \examples{
-Go to UniPort, download IPR005814 family entry database in text that is reviewed and has
-3D structure (databaseExample.fasta, databaseExample.txt).
+# Go to UniPort, download IPR005814 family entry database in text that is reviewed and has
+# 3D structure (databaseExample.fasta, databaseExample.txt).
 
 mySubject <- Biostrings::readAAStringSet("databaseExample.fasta")
 crossReferenceList("databaseExample.txt", mySubject)
