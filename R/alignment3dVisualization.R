@@ -29,11 +29,12 @@
 #' # submit two files to the link and dowload the pdb file, call
 #' # it align.pdb
 #'
-#' alignment3dVisualization("align.pdb", "4GSA", "5TE2")
+#' alignment3dVisualization("./inst/extdata/alignedExample.pdb", "4GSA", "5TE2")
 #'
 #' @export
 #' @import rgl
 #' @import utils
+#'
 alignment3dVisualization <- function(alignedPath, targetName, templateName){
   # store output data(should be a list or a column) into a text file
   outputTxt <- function(outputData, fileName){
