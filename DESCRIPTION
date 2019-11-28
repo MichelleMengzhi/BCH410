@@ -23,6 +23,7 @@ Imports:
     rgl,
     curl
 Suggests: 
-    testthat
-
-    
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
