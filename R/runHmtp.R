@@ -26,7 +26,7 @@
 #' @importFrom shiny runApp
 #'
 runHmtp <- function(){
-  appDir <- system.file("", package = "hmtp")
+  appDir <- system.file("shiny-script", package = "hmtp")
   shiny::runApp(appDir, display.mode = "normal")
   return()
 }
