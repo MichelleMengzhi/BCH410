@@ -4,8 +4,7 @@
 \alias{pathGeneratorMovement}
 \title{selectTemplates}
 \usage{
-pathGeneratorMovement(fileName, suffix = NULL, destination = "",
-  move = FALSE)
+pathGeneratorMovement(fileName, suffix = NULL, destination = "", move = FALSE)
 }
 \arguments{
 \item{fileName}{File name(s) in a character vector. It must in

@@ -16,7 +16,7 @@ work directory containing the pdb name. pdbList.txt
 will be deleted after the execution.
 }
 \examples{
-cat("4GSA \\n 4A0R \\n", file = "pdbList.txt")
+cat("4GSA \n 4A0R \n", file = "pdbList.txt")
 GetPdbFileGenerator()
 
 }
