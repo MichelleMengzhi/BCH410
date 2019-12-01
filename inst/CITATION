@@ -1,0 +1,12 @@
+citHeader("To cite hmtp in publications use:")
+
+citEntry(
+  entry    = "Unpublished",
+  title    = "Package Hmtp",
+  author   = "Yuexin Yu",
+  journal  = "Unpublished",
+  year     = "2019",
+  textVersion = paste(
+
+  )
+)
