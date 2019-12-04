@@ -20,8 +20,9 @@ ui <- tagList(
                submitButton("Submit")
                ),
              mainPanel(
-               rglwidgetOutput(outputId = "plot"),
-               verbatimTextOutput("text")
+               verbatimTextOutput("text"),
+               rglwidgetOutput(outputId = "plot")
+
              )
     )
 
