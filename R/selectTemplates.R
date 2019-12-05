@@ -1,7 +1,6 @@
 # selectedTemplates.R
 #
 # Purpose: main function of selectTemplates
-# Version: 1.0.0
 # Date: 2019-09
 # Author: Yuexin Yu
 #

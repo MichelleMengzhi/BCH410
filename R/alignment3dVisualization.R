@@ -1,7 +1,6 @@
 # alignment3dVisualization.R
 #
 # Purpose: main function of alignment3dVisulization
-# Version: 1.0.0
 # Date: 2019-09
 # Author: Yuexin Yu
 #
