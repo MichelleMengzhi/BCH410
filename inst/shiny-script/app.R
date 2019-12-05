@@ -3,7 +3,7 @@ library(rgl)
 
 ui <- tagList(
   navbarPage(
-    "homolofy modelling template preparation (hmtp)",
+    "homology modeling template preparation (hmtp)",
     tabPanel("3D alignment of homology proteins",
              sidebarPanel(
                helpText("The aligned pdb file can be generated from http://fatcat.burnham.org/fatcat-cgi/cgi/fatcat.pl?-func=pairwise."),
@@ -25,29 +25,26 @@ ui <- tagList(
 
              )
 
-    ),
+    )#,
 
-    tabPanel("Template selection",
-             sidebarPanel(
-               helpText("Select template sequences for given target sequence from given sequence database"),
+#    tabPanel("Template selection",
+#             mainPanel(
+#               helpText("Select template sequences for given target sequence from given sequence database"),
 
-               fileInput("targetSequence", label = h3("Target Sequence")),
-               helpText("The aligned file must be in .fasta"),
+#               fileInput("targetSequence", label = h3("Target Sequence")),
+#               helpText("The aligned file must be in .fasta"),
 
-               fileInput("databaseSequences", label = h3("Database Sequences")),
-               helpText("The file should be in .fasta"),
+#               fileInput("databaseSequences", label = h3("Database Sequences")),
+#               helpText("The file should be in .fasta"),
 
-               fileInput("crossReference", label = h3("Cross Reference")),
-               helpText("The file should be in .txt"),
+#               fileInput("crossReference", label = h3("Cross Reference")),
+#               helpText("The file should be in .txt"),
 
-               actionButton('goPlot', 'Submit'),
+#               actionButton("button", label = "Submit"),
 
-               downloadButton("downloadData", "Download")
-             ),
-             mainPanel(
-               plotOutput('progress', width = "300px", height = "300px")
-             )
-    )
+#               downloadButton("downloadData", "Download")
+#             )
+#    )
   )
 
 )
@@ -67,45 +64,44 @@ server <- function(input, output){
     paste("Red is", input$targetName, "\nBlue is", input$templateName)
   })
 
-  output$clickCount <- renderText({
-    paste("Download ButtonClicks =", input$rnd)
-  })
-
 # =================template selection=====================================
 
 
-  #output$downloadData <- hmtp::selectTemplates(input$targetSequence$datapath,
-  #                                             input$databaseSequences$datapath,
-  #                                             input$crossReference$datapath)
+#  observeEvent(input$button, {
+#    if (is.null(input$targetSequence))
+#      return(NULL)
+#    if (is.null(input$databaseSequences))
+#      return(NULL)
+#    if (is.null(input$crossReference))
+#      return(NULL)
 
-  output$progress <- renderPlot({
-    input$goPlot # Re-run when button is clicked
 
-    # Create 0-row data frame which will be used to store data
-    dat <- data.frame(x = numeric(0), y = numeric(0))
+#    hmtp::selectTemplates(input$targetSequence$datapath,
+#                          input$databaseSequences$datapath,
+#                          input$crossReference$datapath)
+#    fs <- c(paste0(getwd(),"/alignmentFiles/", collapse = ""),
+#            paste0(getwd(),"/templatePDB/", collapse = ""))
+#    zip(zipfile = paste0(tempdir(), "/template.zip"), files = fs)
+#    file.remove(fs)
+#  })
 
-    withProgress(message = 'File generating', value = 0, {
-      # Number of times we'll go through the loop
-      n <- 10
+#  output$downloadData <- downloadHandler(
+#    filename = "template.zip",
+#    contentType = "application/zip",
+#    content = function(file){
+#      file.copy(paste0(tempdir(), "/template.zip"), file)
+#      file.remove(paste0(tempdir(), "/template.zip"))
+#    }
+#  )
 
-      for (i in 1:n) {
-        # Each time through the loop, add another row of data. This is
-        # a stand-in for a long-running computation.
-        dat <- rbind(dat, data.frame(x = rnorm(1), y = rnorm(1)))
-
-        # Increment the progress bar, and update the detail text.
-        incProgress(1/n, detail = paste("Doing part", i))
-
-        # Pause for 0.1 seconds to simulate a long computation.
-        Sys.sleep(0.1)
-      }
-    })
-
-    plot(dat$x, dat$y)
-  })
 
 
 
 }
 
 shinyApp(ui = ui, server = server)
+
+
+#pro <- shiny::Progress$new()
+#on.exit(pro$close())
+#progress$set(message = "Begin to process files, Please wait...", vlaue = 0)
