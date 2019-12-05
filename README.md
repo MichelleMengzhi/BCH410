@@ -25,7 +25,7 @@ You can install the released version of hmtp from github with:
 
 ``` r
 library(devtools)
-install_github("MichelleMengzhi/hmtp")
+install_github("MichelleMengzhi/hmtp", build_vignettes = TRUE)
 library(hmtp)
 ```
 

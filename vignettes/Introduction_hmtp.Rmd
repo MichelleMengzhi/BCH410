@@ -19,11 +19,10 @@ The goal of hmtp is to prepare templates for homology modeling. This package can
 
 ```{r setup}
 library(devtools)
-install_github("MichelleMengzhi/hmtp")
+install_github("MichelleMengzhi/hmtp", build_vignettes = TRUE)
 library(hmtp)
 ```
 
-![](./inst/extdata/hmtp.png)
 
 This package contains two main functions: **selectTemplates** which
 selects templates for the target in the later homology modeling and gets
