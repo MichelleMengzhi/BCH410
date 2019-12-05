@@ -18,7 +18,7 @@
 #'
 #' @return No return value but open up a shiny page
 #' @examples
-#' \donyrun{
+#' \dontrun{
 #' runHmtp()
 #' }
 #'

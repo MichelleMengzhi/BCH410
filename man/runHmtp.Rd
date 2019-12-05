@@ -15,7 +15,7 @@ A function that launches the shiny app for this package.
 The code has been placed in \code{./inst/shiny-scripts}
 }
 \examples{
-\donyrun{
+\dontrun{
 runHmtp()
 }
 
