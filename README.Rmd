@@ -33,7 +33,7 @@ library(hmtp)
 To run the shinyApp:
 
 ``` r
-<ShinyAppName>()
+runHmtp()
 ``` 
 
 ## Overview
@@ -47,7 +47,7 @@ browseVignettes("hmtp")
 This package contains two main functions:
 **selectTemplates** which selects templates for the target in the later homology modeling and gets their pdb files and alignment file, **alignment3dVisualization** whcih provides a visualization of how similar the template and target sequences are in 3D, helper functions *crossReferenceList*, *GetPdbFileGenerator*, *pathGeneratorMovement*, which contribute in main functions but can also be used separately.
 
-- hmtp
+ - hmtp
  |- LICENSE
  |- README
  |- data
@@ -62,6 +62,9 @@ This package contains two main functions:
       |- databaseExample.txt
       |- hmtp.png
       |- targetExample.fasta
+    |- shiny-script
+      |- app.R
+    |- CITATION
  |- man
       |- alignedExample.Rd
       |- alignment3dVisualization.Rd
@@ -82,7 +85,6 @@ This package contains two main functions:
  |- tests
     |- testthat.R
     |- testthst
-      |- A3SNF5.txt
       |- alignedExample.pdb
       |- databaseExample.fasta
       |- datbaseExample.txt
@@ -92,6 +94,8 @@ This package contains two main functions:
       |- test_GetPdbFileGenerator.R
       |- test_pathGeneratorMovement.R
       |- test_selectTemplates.R
+ |- vignettes
+    |- Introduction_hmtp.Rmd
  |- DESCRIPTION
  |- NAMESPACE
  |- hmtp.Rproj

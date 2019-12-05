@@ -32,7 +32,7 @@ library(hmtp)
 To run the shinyApp:
 
 ``` r
-<ShinyAppName>()
+runHmtp()
 ```
 
 ## Overview
@@ -51,23 +51,58 @@ sequences are in 3D, helper functions *crossReferenceList*,
 *GetPdbFileGenerator*, *pathGeneratorMovement*, which contribute in main
 functions but can also be used separately.
 
-  - hmtp |- LICENSE |- README |- data |- alignedExample.rda |-
-    databaseExample.rda |- databaseExampleText.rda |- targetExample.rda
-    |- inst |- extdata |- alignedExample.pdb |- databaseExample.fasta |-
-    databaseExample.txt |- hmtp.png |- targetExample.fasta |- man |-
-    alignedExample.Rd |- alignment3dVisualization.Rd |-
-    crossReferenceList.Rd |- databaseExample.Rd |-
-    databaseExmapleText.Rd |- GetPdbFileGenerator.Rd |-
-    pathGeneratorMovement.Rd |- selectTemplates.Rd |- targetExmaple.Rd
-    |- R |- alignment3dVisualization.R |- crossReferenceList.R |- data.R
-    |- GetPdbFileGenerator.R |- pathGeneratorMobement.R |-
-    selectTemplates.R |- tests |- testthat.R |- testthst |- A3SNF5.txt
-    |- alignedExample.pdb |- databaseExample.fasta |- datbaseExample.txt
-    |- targetExample.fasta |- test\_alignment3dVisualization.R |-
-    test\_crossReferenceList.R |- test\_GetPdbFileGenerator.R |-
-    test\_pathGeneratorMovement.R |- test\_selectTemplates.R |-
-    DESCRIPTION |- NAMESPACE |- hmtp.Rproj
-
+ - hmtp
+ |- LICENSE
+ |- README
+ |- data
+  |- alignedExample.rda
+  |- databaseExample.rda
+  |- databaseExampleText.rda
+  |- targetExample.rda
+ |- inst
+    |- extdata
+      |- alignedExample.pdb
+      |- databaseExample.fasta
+      |- databaseExample.txt
+      |- hmtp.png
+      |- targetExample.fasta
+    |- shiny-script
+      |- app.R
+    |- CITATION
+ |- man
+      |- alignedExample.Rd
+      |- alignment3dVisualization.Rd
+      |- crossReferenceList.Rd
+      |- databaseExample.Rd
+      |- databaseExmapleText.Rd
+      |- GetPdbFileGenerator.Rd
+      |- pathGeneratorMovement.Rd
+      |- selectTemplates.Rd
+      |- targetExmaple.Rd
+ |- R
+      |- alignment3dVisualization.R
+      |- crossReferenceList.R
+      |- data.R
+      |- GetPdbFileGenerator.R
+      |- pathGeneratorMobement.R
+      |- selectTemplates.R
+ |- tests
+    |- testthat.R
+    |- testthst
+      |- alignedExample.pdb
+      |- databaseExample.fasta
+      |- datbaseExample.txt
+      |- targetExample.fasta
+      |- test_alignment3dVisualization.R
+      |- test_crossReferenceList.R
+      |- test_GetPdbFileGenerator.R
+      |- test_pathGeneratorMovement.R
+      |- test_selectTemplates.R
+ |- vignettes
+    |- Introduction_hmtp.Rmd
+ |- DESCRIPTION
+ |- NAMESPACE
+ |- hmtp.Rproj
 ## Contrbutions
 
 ``` r
