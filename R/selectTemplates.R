@@ -43,7 +43,14 @@
 #' @import DECIPHER
 #'
 selectTemplates <- function(targetSequence, databaseSequences,
-                            crossReference){
+                            crossReference) {
+  # input error check
+  if (is.na(targetSequence)
+      | is.na(databaseSequences)
+      | is.na(crossReference)) {
+    stop("Need input!")
+  }
+
   # store output data(should be a list or a column) into a text file
   outputTxt <- function(outputData, fileName){
     myOutput <- outputData
